@@ -99,3 +99,25 @@ function military_service_age() {
   else console.log("too aged");
 }
 military_service_age();
+
+// Salary calculator
+
+function salaryCal() {
+  const hour = Number(prompt("How many hours have you worked today?"));
+  const salaryRate = Number(prompt("How much is hourly salary?"));
+  if (hour <= 7) console.log(`Your salary is: ${hour * salaryRate}`);
+  else if (hour <= 9)
+    console.log(
+      `Your salary is:${7 * salaryRate + (hour - 7) * salaryRate * 1.5}`
+    );
+  else
+    console.log(
+      `Your salary is:${
+        7 * salaryRate +
+        (hour - 7) * salaryRate * 1.5 +
+        (hour - 9) * salaryRate * 2
+      }`
+    );
+}
+
+salaryCal();
