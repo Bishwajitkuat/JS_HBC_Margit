@@ -60,13 +60,13 @@ console.log(true != true);
 
 const name = "Mikko";
 const student = name;
-// alert(student);
+alert(student);
 
 // usefull method of Window
-// const full_name = window.prompt("Please enter you name");
-// console.log(typeof full_name);
-// document.querySelector("h2").textContent = `Your name is ${full_name}`;
-// confirm("Is your name printed correctly!");
+const full_name = window.prompt("Please enter you name");
+console.log(typeof full_name);
+document.querySelector("h2").textContent = `Your name is ${full_name}`;
+confirm("Is your name printed correctly!");
 
 // basic function
 function sum(x, y) {
