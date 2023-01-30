@@ -2,17 +2,17 @@ function randomNumber() {
   first_num = Number(prompt("First Number:"));
   second_num = Number(prompt("Second number:"));
   third_num = Number(prompt("Third number:"));
-
+  // with list
   // num_list = [first_num, second_num, third_num];
   // positive_num = num_list.filter((item) => item > -1).length;
   let positive_num = 0;
-  if (first_num > -1) {
+  if (first_num >= 0) {
     positive_num += 1;
   }
-  if (second_num > -1) {
+  if (second_num >= 0) {
     positive_num += 1;
   }
-  if (third_num > -1) {
+  if (third_num >= 0) {
     positive_num += 1;
   }
 

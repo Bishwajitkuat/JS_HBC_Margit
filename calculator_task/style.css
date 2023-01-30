@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  background-color: rgba(0, 255, 255, 0.104);
+  padding: 20px;
+  width: 50%;
+  margin: 60px auto;
+  border-radius: 10px;
+}
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+p {
+  margin-bottom: 20px;
+}
+.price_div {
+  margin-bottom: 16px;
+}
+.money_div {
+  margin-bottom: 10px;
+}
+.input_form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+input {
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100px;
+}
+
+button {
+  margin-left: 65px;
+  margin-bottom: 20px;
+  color: black;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 100px;
+}
+
+/* Temperature Converter */
+
+.tem_cal {
+  background-color: rgba(0, 255, 255, 0.104);
+  padding: 20px;
+  width: 50%;
+  margin: 60px auto;
+  border-radius: 10px;
+}

@@ -165,3 +165,11 @@ function sumAvgSmlLrg() {
 }
 
 //sumAvgSmlLrg();
+// let list = [1, 2, 3, 4];
+// let x = list.map((item) => item ** 2).reduce((acc, item) => acc + item);
+// console.log(x);
+let y = new Array(10)
+  .fill(0)
+  .map((item, index) => index + 1)
+  .reduce((a, i) => a + i, 0);
+console.log(y);
