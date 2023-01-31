@@ -41,7 +41,6 @@ input {
 }
 
 button {
-  margin-left: 65px;
   margin-bottom: 20px;
   color: black;
   background-color: aquamarine;
@@ -59,4 +58,7 @@ button {
   width: 50%;
   margin: 60px auto;
   border-radius: 10px;
+}
+.tem_input div {
+  margin-bottom: 10px;
 }

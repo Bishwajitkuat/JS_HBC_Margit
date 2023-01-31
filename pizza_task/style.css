@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  margin: 20px 0;
+  background-color: bisque;
+  height: 200px;
+  text-align: center;
+}
+.order_form {
+  background-color: azure;
+}
+.order_summery {
+  background-color: aquamarine;
+}
+.name_div {
+  margin-bottom: 10px;
+}
+.size {
+  margin-bottom: 10px;
+}
+.size_heading {
+  margin-bottom: 10px;
+}
+.size_input {
+  margin-bottom: 8px;
+}
+.toppings_heading {
+  margin-bottom: 5px;
+}
+.toppings_text {
+  margin-bottom: 10px;
+}
+table {
+  text-align: left;
+  margin-bottom: 10px;
+}
+td {
+  width: 120px;
+  padding: 5px;
+}
+.delivery {
+  margin-bottom: 10px;
+}
+.delivery label {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  display: block;
+}

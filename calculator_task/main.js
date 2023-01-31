@@ -13,27 +13,37 @@ const gasolinCal = () => {
 };
 
 document.querySelector("#cal").addEventListener("click", gasolinCal);
-//Temp converter
 
+//Temp converter
 const cel = (id) => {
   let celci = document.querySelector("#celci");
   let fahrn = document.querySelector("#fahrn");
   let kel = document.querySelector("#kel");
   if (id === "celci") {
-    fahrn.value = Math.round((+celci.value * 9) / 5 + 32);
-    kel.value = Math.round(+celci.value + 273.15);
+    fahrn.value = ((+celci.value * 9) / 5 + 32).toFixed(2);
+    kel.value = (+celci.value + 273.15).toFixed(2);
   } else if (id === "fahrn") {
-    celci.value = Math.round(((+fahrn.value - 32) * 5) / 9);
-    kel.value = Math.round(((+fahrn.value - 32) * 5) / 9 + 273.15);
+    celci.value = (((+fahrn.value - 32) * 5) / 9).toFixed(2);
+    kel.value = (((+fahrn.value tem_input- 32) * 5) / 9 + 273.15).toFixed(2);
   } else if (id === "kel") {
-    celci.value = Math.round(+kel.value - 273.15);
-    fahrn.value = Math.round(((+kel.value - 273.15) * 9) / 5 + 32);
+    celci.value = (+kel.value - 273.15).toFixed(2);
+    fahrn.value = (((+kel.value - 273.15) * 9) / 5 + 32).toFixed(2);
   }
+  // empty each field if one field is empty
+  document.querySelectorAll(".tem_input input").forEach((item) => {
+    item.addEventListener("input", function () {
+      if (this.value === "") {
+        celci.value = "";
+        fahrn.value = "";
+        kel.value = "";
+      }
+    });
+  });
 };
 
 // using for forEach and event hendelar
 
-// document.querySelectorAll(".tem_input").forEach((item) =>
+// document.querySelectorAll(".tem_input input").forEach((item) =>
 //   item.addEventListener("input", function () {
 //     const id = this.id;
 //     if (id === "celci") {
@@ -48,3 +58,7 @@ const cel = (id) => {
 //     }
 //   })
 // );
+
+//Nodelist
+// const nodelist = [...document.querySelectorAll("p")];
+// console.log(nodelist);
