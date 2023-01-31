@@ -11,9 +11,11 @@ header {
 }
 .order_form {
   background-color: azure;
+  padding: 50px;
 }
 .order_summery {
   background-color: aquamarine;
+  padding: 50px;
 }
 .name_div {
   margin-bottom: 10px;
