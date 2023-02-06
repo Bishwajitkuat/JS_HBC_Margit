@@ -1,0 +1,8 @@
+body {
+  /* background-image: linear-gradient(red, green); */
+  height: 100vh;
+}
+
+.direction_piker {
+  display: flex;
+}
