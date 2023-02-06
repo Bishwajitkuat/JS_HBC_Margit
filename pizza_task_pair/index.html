@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Pizza Task</title>
   </head>
   <body>
     <main>
       <header>
-        <div>Icon</div>
-        <div><h1>Order Your Pizza</h1></div>
+        <h1>Order <span id="the">The</span> Pizza</h1>
+        <img src="logo.jpeg" alt="pizza logo" />
       </header>
       <div class="main_body">
         <section class="order">
@@ -23,20 +29,32 @@
             <div class="order_size">
               <h3>Size</h3>
               <div>
-                <input type="radio" name="size" id="size_2" />
-                <label for="size_2">Size 2, price: 7.50€</label>
+                <p>
+                  <input type="radio" name="size" id="size_2" />
+                  <label for="size_2">Size 2</label>
+                </p>
+                <p>7.50€</p>
               </div>
               <div>
-                <input type="radio" name="size" id="size_4" />
-                <label for="size_4">Size 4, price: 10.50€</label>
+                <p>
+                  <input type="radio" name="size" id="size_4" />
+                  <label for="size_4">Size 4</label>
+                </p>
+                <p>10.50€</p>
               </div>
               <div>
-                <input type="radio" name="size" id="size_6" />
-                <label for="size_6">Size 6, price: 12.50€</label>
+                <p>
+                  <input type="radio" name="size" id="size_6" />
+                  <label for="size_6">Size 6</label>
+                </p>
+                <p>12.50€</p>
               </div>
               <div>
-                <input type="radio" name="size" id="size_8" />
-                <label for="size_8">Size 8, price: 15.50€</label>
+                <p>
+                  <input type="radio" name="size" id="size_8" />
+                  <label for="size_8">Size 8</label>
+                </p>
+                <p>15.50€</p>
               </div>
             </div>
             <div class="toppings">
@@ -89,12 +107,12 @@
               </p>
             </div>
             <div class="delivery">
-              <label for="deli"><h3>Delivery</h3></label>
+              <label><h3>Delivery</h3></label>
               <select id="deli">
-                <option value="non">Select from bellow</option>
-                <option value="home">Home delivery</option>
-                <option value="take_way">Take way</option>
-                <option value="eat_in">Eat in</option>
+                <option value="Not selected">Select from bellow</option>
+                <option value="Home delivery">Home delivery</option>
+                <option value="Take way">Take way</option>
+                <option value="Eat in">Eat in</option>
               </select>
             </div>
           </form>
@@ -111,12 +129,10 @@
           </div>
           <div class="sum_size">
             <div>
-              <p>Pizza size:</p>
+              <p>Pizza:</p>
               <p id="sum_size_id"></p>
             </div>
-            <div>
-              <p id="sum_size_price_id">0€</p>
-            </div>
+            <p id="sum_size_price_id">0€</p>
           </div>
           <div class="sum_topp">
             <div>
@@ -128,8 +144,11 @@
             </div>
           </div>
           <div class="sum_deli">
-            <p>Delivery:</p>
-            <p id="sum_deli_id"></p>
+            <div>
+              <p>Delivery:</p>
+              <p id="sum_deli_id"></p>
+            </div>
+            <p id="sum_deli_price_id">0€</p>
           </div>
           <div class="sum_total">
             <p>Total</p>
