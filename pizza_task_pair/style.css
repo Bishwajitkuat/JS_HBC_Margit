@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+body {
+}
+main {
+  width: 85vw;
+  margin: 2rem auto 0;
+}
+header {
+  background-color: aqua;
+  display: flex;
+}
+h3 {
+  margin-bottom: 1rem;
+}
+.main_body {
+  background-color: beige;
+  display: flex;
+}
+.order {
+  background-color: aquamarine;
+  width: 60vw;
+  padding: 2rem 0 2rem 2rem;
+}
+#order_name_id {
+  width: 30%;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  border: none;
+  font-family: inherit;
+}
+
+.order_name {
+  margin-bottom: 1rem;
+}
+.order_size {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.order_size div {
+  margin-bottom: 0.5rem;
+  border: 0.025rem solid black;
+  width: 30%;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.toppings {
+  margin-bottom: 1rem;
+}
+.toppings_optiions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border: 0.025rem solid rgb(0, 0, 0);
+  width: 65%;
+  border-radius: 0.5rem;
+}
+.toppings_optiions div {
+  width: 10vw;
+  padding: 0.5rem;
+}
+.summary {
+  background-color: bisque;
+  width: 40vw;
+  padding: 2rem;
+}
+.sum_heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.024rem dashed black;
+  margin-bottom: 1rem;
+}
+.sum_name {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#sum_name_id {
+  margin-left: 0.5rem;
+}
+.sum_size {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.sum_topp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.sum_deli {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#sum_deli_id {
+  margin-left: 0.5rem;
+}
+.sum_total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.024rem dashed black;
+  margin-bottom: 1rem;
+}
