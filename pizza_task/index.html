@@ -8,116 +8,184 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>What do you want eat!</h1>
-      <img src="" alt="Pizza picture" />
-    </header>
-    <div class="order_form">
-      <form>
-        <div class="name_div">
-          <label for="name">Coustomer name:</label>
-          <input type="text" name="" id="input_name" />
+    <main>
+      <header>
+        <img src="focus_img_2.jpg" alt="Pizza picture" />
+        <h1>Delicious Pizza</h1>
+      </header>
+      <section class="order_section">
+        <div class="order_form">
+          <form>
+            <div class="name_div">
+              <label for="name">Coustomer name:</label>
+              <input type="text" name="" id="input_name" />
+            </div>
+            <div class="size">
+              <h3 class="size_heading">Size</h3>
+              <div class="size_div">
+                <div class="size_input">
+                  <div>
+                    <input type="radio" name="pizza_size" id="size_2" />
+                    <label for="size_2">Size 2</label>
+                  </div>
+                  <p>7,50€</p>
+                </div>
+                <div class="size_input">
+                  <div>
+                    <input type="radio" name="pizza_size" id="size_4" />
+                    <label for="size_4">Size 4</label>
+                  </div>
+                  <p>10,50€</p>
+                </div>
+                <div class="size_input">
+                  <div>
+                    <input type="radio" name="pizza_size" id="size_6" />
+                    <label for="size_6">Size 6</label>
+                  </div>
+                  <p>12,50€</p>
+                </div>
+                <div class="size_input">
+                  <div>
+                    <input type="radio" name="pizza_size" id="size_8" />
+                    <label for="size_8">Size 8</label>
+                  </div>
+                  <p>15,50€</p>
+                </div>
+              </div>
+            </div>
+            <div class="toppings">
+              <h3 class="toppings_heading">Toppings</h3>
+
+              <div class="toppings_options">
+                <div>
+                  <input type="checkbox" id="pepperoni" />
+                  <label for="pepperoni">Pepperoni</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="mushroom" />
+                  <label for="mushroom">Mushroom</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="ex_cheese" />
+                  <label for="ex_cheese">Extra cheese</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="garlic" />
+                  <label for="garlic">Fresh garlic</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="basil" />
+                  <label for="basil">Basil</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tomato" />
+                  <label for="tomato">Tomato</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="onion" />
+                  <label for="onion">Onion</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="chilli" />
+                  <label for="chilli">Chilli</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="olive" />
+                  <label for="olive">Olive</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="pepper" />
+                  <label for="pepper">Green pepper</label>
+                </div>
+              </div>
+              <p class="toppings_text">
+                4 toppings comes with the pizza. Each extra Ingridient will cost
+                0,5€ extra
+              </p>
+            </div>
+            <div class="delivery">
+              <label for="method">Delivery</label>
+              <select name="method" id="delivery_method">
+                <option value="non">Select from bellow</option>
+                <option value="home">Home delivery</option>
+                <option value="pickup">Pickup</option>
+                <option value="eat_in">Eat in</option>
+              </select>
+            </div>
+            <div class="address" id="address_id">
+              <form id="address_input">
+                <p>Delivery address:</p>
+                <div>
+                  <label class="address_label" for="deliver_address"
+                    >Streat</label
+                  >
+                  <input type="text" id="deliver_address" />
+                </div>
+                <div>
+                  <label class="address_label" for="post_code">Post code</label>
+                  <input type="number" id="post_code" />
+                </div>
+                <div>
+                  <label class="address_label" for="city">City</label>
+                  <input type="text" id="city" />
+                </div>
+              </form>
+            </div>
+          </form>
         </div>
-        <div class="size">
-          <h3 class="size_heading">What size pizza do you wnat?</h3>
-          <div class="size_input">
-            <input type="radio" name="pizza_size" id="size_2" />
-            <label for="size_2">Size 2, the price is 7,50€</label>
-          </div>
-          <div class="size_input">
-            <input type="radio" name="pizza_size" id="size_4" />
-            <label for="size_4">Size 4, the price is 10,50€</label>
-          </div>
-          <div class="size_input">
-            <input type="radio" name="pizza_size" id="size_6" />
-            <label for="size_6">Size 6, the price is 12,50€</label>
-          </div>
-          <div class="size_input">
-            <input type="radio" name="pizza_size" id="size_8" />
-            <label for="size_8">Size 8, the price is 15,50€</label>
-          </div>
-        </div>
-        <div class="toppings">
-          <h3 class="toppings_heading">
-            Ingridients, want to have in you pizza
-          </h3>
-          <p class="toppings_text">
-            4 Ingridients comes with the pizza. Each extra Ingridient will cost
-            0,5€ extra
+        <div class="order_summery">
+          <p class="order_name">
+            Coustomer Name: <span id="coustomer_name_id"></span>
           </p>
-          <table>
-            <tr>
-              <td>
-                <input type="checkbox" id="pepperoni" />
-                <label for="pepperoni">Pepperoni</label>
-              </td>
-              <td>
-                <input type="checkbox" id="mushroom" />
-                <label for="mushroom">Mushroom</label>
-              </td>
-              <td>
-                <input type="checkbox" id="ex_cheese" />
-                <label for="ex_cheese">Extra cheese</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" id="garlic" />
-                <label for="garlic">Fresh garlic</label>
-              </td>
-              <td>
-                <input type="checkbox" id="basil" />
-                <label for="basil">Basil</label>
-              </td>
-              <td>
-                <input type="checkbox" id="tomato" />
-                <label for="tomato">Tomato</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" id="onion" />
-                <label for="onion">Onion</label>
-              </td>
-              <td>
-                <input type="checkbox" id="chilli" />
-                <label for="chilli">Chilli</label>
-              </td>
-              <td>
-                <input type="checkbox" id="olive" />
-                <label for="olive">Olive</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input type="checkbox" id="pepper" />
-                <label for="pepper">Green pepper</label>
-              </td>
-            </tr>
-          </table>
+          <div class="order_summery_body">
+            <div class="order_body_headings">
+              <p class="order_content">Item</p>
+              <p class="order_quantity">Quantity</p>
+              <p class="order_price">Price</p>
+            </div>
+            <div class="order_size">
+              <p class="order_content">
+                Pizza: <span id="order_size_id"></span>
+              </p>
+              <p class="order_quantity" id="order_size_quantity">0</p>
+              <p class="order_price" id="order_size_price">0€</p>
+            </div>
+            <div class="order_toppings">
+              <p class="order_content">
+                Toppings: <span id="order_toppings_id"></span>
+              </p>
+              <p class="order_quantity" id="toppings_quantity_id">0</p>
+              <p class="order_price" id="toppinngs_price_id">0€</p>
+            </div>
+
+            <div class="order_delivery">
+              <p class="order_content">
+                Delivery: <span id="order_delivery_id"></span>
+              </p>
+              <p class="order_price" id="home_deli_price_id">0€</p>
+            </div>
+
+            <div class="order_total">
+              <p class="order_content">Total price</p>
+              <p class="order_price" id="order_total_id">0€</p>
+            </div>
+          </div>
+          <div class="summery_address" id="summery_address_id">
+            <p>Delivery address:</p>
+            <p id="sum_deli_address_id"></p>
+          </div>
         </div>
-        <div class="delivery">
-          <label for="method">Where do you want to have it?</label>
-          <select name="method" id="delivery_method">
-            <option value="non">Select from bellow</option>
-            <option value="home">Home delivery</option>
-            <option value="pickup">Pickup</option>
-            <option value="eat_in">Eat in</option>
-          </select>
-        </div>
-      </form>
-    </div>
-    <div class="order_summery">
-      <p class="order_name">Name: <span id="coustomer_name_id"></span></p>
-      <p class="order_size">Pizza size: <span id="order_size_id"></span></p>
-      <p class="order_toppings">
-        Toppings: <span id="order_toppings_id"></span>
-      </p>
-      <p class="order_delivery">
-        Delivery method: <span id="order_delivery_id"></span>
-      </p>
-      <p class="order_total">Total price: <span id="order_total_id"></span></p>
-    </div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

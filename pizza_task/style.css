@@ -2,20 +2,55 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+body {
+  background-color: black;
+}
+input {
+  font-family: inherit;
 }
 header {
-  margin: 20px 0;
-  background-color: bisque;
-  height: 200px;
+  margin: 20px 0 0 0;
   text-align: center;
+  background-color: black;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
 }
+h1 {
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+main {
+  color: white;
+  background: url("./pizza_bg_cover.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.order_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .order_form {
-  background-color: azure;
   padding: 50px;
+  width: 60%;
+  background-color: black;
+  opacity: 0.8;
 }
 .order_summery {
-  background-color: aquamarine;
   padding: 50px;
+  width: 40%;
+  background-color: black;
+  opacity: 0.8;
 }
 .name_div {
   margin-bottom: 10px;
@@ -23,31 +58,109 @@ header {
 .size {
   margin-bottom: 10px;
 }
+.size_div {
+  display: flex;
+  flex-direction: column;
+}
 .size_heading {
   margin-bottom: 10px;
 }
 .size_input {
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+.toppings {
+  margin-bottom: 1.5rem;
 }
 .toppings_heading {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
 }
 .toppings_text {
   margin-bottom: 10px;
 }
-table {
-  text-align: left;
-  margin-bottom: 10px;
+
+.toppings_options {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
-td {
-  width: 120px;
-  padding: 5px;
+.toppings_options div {
+  padding: 0.25rem;
+  width: 50%;
 }
 .delivery {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .delivery label {
   font-size: 1.5rem;
-  margin-bottom: 8px;
+  margin-bottom: 1rem;
   display: block;
+}
+.order_summery_body {
+  display: flex;
+  flex-direction: column;
+}
+.order_name {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.order_body_headings {
+  border-bottom: 0.001rem solid white;
+}
+.order_total {
+  border-top: 0.001rem solid white;
+}
+.order_body_headings,
+.order_size,
+.order_toppings {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.order_delivery,
+.order_total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.order_content {
+  width: 60%;
+  padding: 0.5rem 0;
+}
+.order_quantity {
+  width: 20%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.order_price {
+  width: 20%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.address_label {
+  display: inline-block;
+  width: 15%;
+}
+.hide {
+  visibility: hidden;
+}
+
+.delivery label {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
