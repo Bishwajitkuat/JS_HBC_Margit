@@ -10,29 +10,73 @@
   <body>
     <main>
       <form class="operation">
-        <h1>Linner Gradient Generator</h1>
+        <h1>Linner Gradient Generator </h1>
         <div class="color_picker">
-          <label>Color </label>
-          <input type="color" name="" id="first_color" />
-          <input type="color" name="" id="second_color" />
+          <label><h4>Color</h4> </label>
+          <input type="color" value="#ff0000" id="first_color" />
+          <input type="color" value="#008000" id="second_color" />
         </div>
         <div class="direction">
-          <label for="direction">Direction</label>
+          <h4>Directions</h4>
           <div class="direction_piker">
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-mid" />
-            <input type="radio" name="direction" id="top-right" />
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-left" />
-            <input type="radio" name="direction" id="top-left" />
+            <div class="single_row">
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="top-left" value="135" />
+                <label for="top-left">&#8600 </label>
+              </div>
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="top-mid" value="180"/>
+                <label for="top-mid">&#8595</label>
+              </div>
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="top-right" value="225"/>
+                <label for="top-right">&#8601</label>
+              </div>
+            </div>
+
+            <div class="single_row">
+              <div class="direction_box">
+                <input type="radio" name="direction" id="mid-left" value="90"/>
+                <label for="mid-left">&#8594</label>
+              </div>
+
+              <div class="direction_box mid_mid">
+                <input type="radio" name="direction" id="mid-mid" />
+                <label for="mid-mid"></label>
+              </div>
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="mid-right" value="270"/>
+                <label for="mid-right">&#8592</label>
+              </div>
+            </div>
+
+            <div class="single_row">
+              <div class="direction_box">
+                <input type="radio" name="direction" id="down-left" value="45" />
+                <label for="down-left">&#8599</label>
+              </div>
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="down-mid" value="0" />
+                <label for="down-mid">&#8593</label>
+              </div>
+
+              <div class="direction_box">
+                <input type="radio" name="direction" id="down-right" value="315"/>
+                <label for="down-right">&#8598</label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="oputput">
-          <h2>CSS code:</h2>
-          <p>linear gradient ()</p>
+          <h4>CSS code:</h4>
+          <p>colors: <span id="color1"></span>#ff0000 to <span id="color2">#008000</span></p>
+          <p>direction: <span id="dir_star">From down-mid</span></p>
+
         </div>
       </form>
     </main>
