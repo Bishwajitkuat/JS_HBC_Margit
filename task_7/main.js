@@ -3,6 +3,8 @@
 // element.classList.replace(old_name, new_name)
 // element.calssList.add()
 // element.classList.remove()
+
+// variables
 const btn__back = document.querySelector("#backToTop");
 const header = document.querySelector("header");
 const btn_nemu = document.querySelector("#btn_nemu");
@@ -12,10 +14,11 @@ const doNotClick = document.querySelector("#doNotClick");
 const overlay = document.querySelector(".overlay");
 const close_btn = document.querySelector("#modal_btn");
 
+//
 const scrollFunction = () => {
   if (
-    document.body.scrollTop > 200 ||
-    document.documentElement.scrollTop > 200
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
   ) {
     btn__back.style.display = "block";
     header.classList.add("header_bg");
@@ -30,10 +33,6 @@ const getToTop = () => {
   document.documentElement.scrollTop = 0;
 };
 
-window.onscroll = function () {
-  scrollFunction();
-};
-//
 const expandMobileMenu = () => {
   for (const item of list_item) {
     item.addEventListener("click", expandMobileMenu);
@@ -50,9 +49,11 @@ const modalShow = () => {
 };
 
 const hide_modal = () => {
-  overlay.classList.toggle("hide");
+  overlay.classList.toggle("visible");
 };
 
+// event listener functions
+window.addEventListener("scroll", scrollFunction);
 btn__back.addEventListener("click", getToTop);
 btn_nemu.addEventListener("click", expandMobileMenu);
 doNotClick.addEventListener("click", modalShow);

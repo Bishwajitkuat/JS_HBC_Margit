@@ -65,7 +65,7 @@ section:nth-child(2) {
   height: 100vh;
   background: rgb(236, 205, 205);
 }
-section:last-child {
+section:nth-child(3) {
   height: 100vh;
   background-color: rgb(140, 140, 124);
 }
@@ -86,7 +86,6 @@ footer {
   font-size: larger;
   box-shadow: none;
   border: none;
-  width: 7rem;
   height: 3rem;
   font-family: inherit;
 }
@@ -136,22 +135,25 @@ ul.responsive {
   justify-content: center;
   align-items: center;
   display: none;
+  padding: 2rem;
 }
+
 .overlay.visible {
   display: flex;
 }
-.overlay.hide {
-  display: none;
-}
+
 .modal {
   background-color: white;
   color: black;
   height: 50%;
   width: 50%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  /* position: relative; */
 }
 #modal_btn {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  align-self: flex-end;
 }
