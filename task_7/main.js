@@ -9,6 +9,7 @@ const btn__back = document.querySelector("#backToTop");
 const header = document.querySelector("header");
 const btn_nemu = document.querySelector("#btn_nemu");
 const nav_ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
 const list_item = document.querySelectorAll("nav ul li a");
 const doNotClick = document.querySelector("#doNotClick");
 const overlay = document.querySelector(".overlay");
@@ -16,10 +17,7 @@ const close_btn = document.querySelector("#modal_btn");
 
 //
 const scrollFunction = () => {
-  if (
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-  ) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     btn__back.style.display = "block";
     header.classList.add("header_bg");
   } else {
@@ -38,17 +36,15 @@ const expandMobileMenu = () => {
     item.addEventListener("click", expandMobileMenu);
   }
   if (nav_ul.classList.contains("responsive")) {
+    nav.classList.remove("responsive");
     nav_ul.classList.remove("responsive");
   } else {
+    nav.classList.add("responsive");
     nav_ul.classList.add("responsive");
   }
 };
 
-const modalShow = () => {
-  overlay.classList.toggle("visible");
-};
-
-const hide_modal = () => {
+const modal_show_hide = () => {
   overlay.classList.toggle("visible");
 };
 
@@ -56,5 +52,5 @@ const hide_modal = () => {
 window.addEventListener("scroll", scrollFunction);
 btn__back.addEventListener("click", getToTop);
 btn_nemu.addEventListener("click", expandMobileMenu);
-doNotClick.addEventListener("click", modalShow);
-close_btn.addEventListener("click", hide_modal);
+doNotClick.addEventListener("click", modal_show_hide);
+close_btn.addEventListener("click", modal_show_hide);

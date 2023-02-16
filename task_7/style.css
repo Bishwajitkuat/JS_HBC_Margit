@@ -141,11 +141,14 @@ ul.responsive {
 .overlay.visible {
   display: flex;
 }
+.nav.responsive {
+  display: flex;
+}
 
 .modal {
   background-color: white;
   color: black;
-  height: 50%;
+  height: min-content;
   width: 50%;
   display: flex;
   flex-direction: column;
